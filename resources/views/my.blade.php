@@ -1,0 +1,1 @@
+<br> Resume <br><br> Name: Mr.Patinya pimpho  <br> Age: 19 <br> Maritial Status: Single <br> Date of Brith: 02/10/1998 <br> Religion: buddhism <br> Nationality: Thailand <br> Height / weight : 173 cm. 55 kg. <br> Hobbies: singing
