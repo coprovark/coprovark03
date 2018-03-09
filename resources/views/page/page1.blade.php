@@ -15,12 +15,14 @@ page1
             <input type="hidden" name="hidden" value="59122420302">
             <input type="radio" name="radio" value="M">ชาย
             <input type="radio" name="radio" value="F">หญิง
+            <input type="password" name="password" value="12345678">
             <br>
 
     <input type="submit"value="ส่งค่า">
     </from>
     <h2>แสดงค่า</h2>
     ชื่อ = {{ $NAME}}<br>
-    ชื่อ = {{ $ID}}<br>
-    ชื่อ = {{ $GEN}}
+    ID = {{ $ID}}<br>
+    เพศ = {{ $GEN}}<br>
+    pass = {{ $NUM}}
 @endsection
