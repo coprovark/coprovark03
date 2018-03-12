@@ -2,18 +2,18 @@
 
 @section('content')
 
- <h1 class="page-header">เข้าสู่ระบบ</h1>
-<form class="form-horizontal">
-  <div class="form-group">
-    <label for="inputEmail3" class="col-sm-2 control-label">Usename</label>
-    <div class="col-sm-10">
-      <input type="Usename" class="form-control" id="inputEmail3" placeholder="Usename">
-    </div>
+        <h1 class="page-header">เข้าสู่ระบบ</h1>
+          <form action="/form_login2" method="post">
+              <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">username</label>
+             <div class="col-sm-10">
+                <input name="username" type="text" class="form-control" id="inputEmail3" placeholder="Usename">
+            </div>
   </div>
   <div class="form-group">
-    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+    <label for="inputPassword3" class="col-sm-2 control-label">password</label>
     <div class="col-sm-10">
-      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+      <input name="pass" type="password" class="form-control" id="inputPassword3" placeholder="Password">
     </div>
   </div>
   
@@ -22,5 +22,17 @@
       <button type="submit" class="btn btn-default">Sign in</button>
     </div>
   </div>
-</form>
+  </form>
+  
+  
+  
+  user={{$username}}<br>
+  id={{$name}}
+  
+  <br>
+  <br>
+  
+  
+      
+    
 @endsection

@@ -25,13 +25,6 @@ Route::get('/pagle1', function () {
 
 
 Route::get('/page1', function () {
-
-    $array = [
-        "NAME" => "" ,
-        "ID"   => "",
-        "GEN"  => "",
-        "NUM"  => ""
-];
     return view('page.page1' , $array);
 });
 
@@ -58,13 +51,56 @@ Route::get('/form_register', function () {
     return view('page.form_register');
 });
 
+Route::post('/page','PageController@showlogin');
+
+
 Route::get('/login', function () {
-    return view('page.login');
+    $data = [
+        "USERNAME" => "",
+        "PASS"   => ""
+    ];
+    return view('page.login', $data);
 });
 
-#localhost:8000
-Route::post('/page','PageController@show');
 
-#select post
-Route::post('/page12','PageController@show_select');
+Route::get('/form_check_login',function () {
+    $data = [
+        'users'=>[]
+    ];
+    return view('/form_check_login', $data);
+});
+
+Route::post('/form_check_login', 'PageController@form_check_login');
+
+//////////////////////////////////////////////////////////////////////
+Route::get('/form_login2',function () {
+    $array = [
+        'username'=>'',
+        'name' =>''
+    ];
+    return view('/page.login',$array);
+
+});
+
+
+Route::post('/form_login2','PageController@form_login2');
+////////////////////////////////////////////////////////////////
+// Route::get('/list_user',function () {
+   
+//     return view('/list_user','UsersController@list_users');
+
+// });
+Route::get('/list_user','UsersControllers@list_user');
+
+Route::post('/form_login2','PageController@form_login2');
+
+
+
+
+
+
+
+
+
+
 
